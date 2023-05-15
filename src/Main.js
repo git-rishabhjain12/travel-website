@@ -1,12 +1,16 @@
 import React from "react";
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import "./css.css";
 import Header from "./Header";
-import "./css.css"
+import Section from "./Section";
 function Main() {
   return (
     <>
       <BrowserRouter>
         <Header />
+        <Routes>
+          <Route path="/" element={<Section className="homeBanner" />} />
+        </Routes>
       </BrowserRouter>
     </>
   );

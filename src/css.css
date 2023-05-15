@@ -29,7 +29,7 @@
     border: 2px solid gray;
     border-radius: 30px;
     padding: 0.4rem;
-    
+
 }
 
 .form {
@@ -96,13 +96,136 @@ span {
     list-style: none;
     padding-bottom: 1rem;
 }
-.bottom nav ul li{
+
+.bottom nav ul li {
     padding: 1rem;
 }
 
 
-.bottom nav ul li a{
+.bottom nav ul li a {
     text-decoration: none;
     color: black;
     font-size: 0.9rem;
+}
+
+/* HEADER ENDS */
+
+
+.homeBanner {
+    border-top: 1px solid lightgrey;
+    padding: 5px 0;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+.homeBanner .container .leftPart {
+    margin-right: 4rem;
+}
+
+
+.homeBanner .container .leftPart img {
+    width: 450px;
+    height: 650px;
+    position: relative;
+    z-index: -99;
+}
+
+.locationsName {
+    position: absolute;
+    bottom: -40px;
+    color: #fff;
+    z-index: 99;
+}
+
+.locationsName h1 {
+    font-size: 2.4rem;
+    margin-left: 0.8rem;
+}
+
+.locationsName p {
+    background-color: rgb(241, 241, 16);
+    display: inline-block;
+    text-align: center;
+    padding: 0.3rem 1rem;
+    margin-left: 3rem;
+    margin-top: 0.4rem;
+    border-radius: 20px;
+    font-weight: 600;
+}
+
+.arrows {
+    position: absolute;
+    bottom: -70px;
+    left: 350px;
+    color: #fff;
+}
+
+.arrows .arrowBackward {
+    margin-right: 10px;
+}
+
+.arrows .arrowForward {
+    margin-left: 10px;
+}
+
+.homeBanner .container .rightPart {
+    margin-left: 2rem;
+    padding: 2rem 1rem;
+}
+
+.rightPart h1 {
+    display: inline-block;
+    width: 70%;
+    font-weight: 400;
+    font-size: 3.3rem;
+    padding-bottom: 1.3rem;
+}
+
+.rightPart h1 .colorChange {
+    color: yellow;
+}
+
+.rightTop p {
+    font-size: 1.4rem;
+}
+
+.rightPart .rightBottom .categories {
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem 2rem 3rem 0;
+    position: relative;
+}
+
+.rightPart .rightBottom .categories .category img {
+    width: 290px;
+    border-radius: 20px;
+    /* position: absolute; */
+    z-index: -99;
+}
+
+.rightPart .rightBottom .categories .category .texts {
+    border: 2px solid wheat;
+    box-shadow: 3px 3px 5px 3px grey;
+    position: absolute;
+    bottom: 30px;
+    /* left: 1px; */
+    padding: 0.5rem 5.2rem;
+    background-color: white;
+    border-radius: 20px;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.arrowsBtn .previousArrow,
+.nextArrow {
+    display: inline-block;
+    border: 2px solid black;
+    border-radius: 40px 40px 40px;
+    padding: 5px;
+    line-height: 1;
 }
